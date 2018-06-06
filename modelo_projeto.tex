@@ -167,76 +167,92 @@
 %% ====================================
 %% ====================================
 \section{Introdução}
-TES TESTE TESTE  .
-
-Indique também nesta seção o escopo do projeto.
-
-Apresente um overview do parque tecnológico do caso.
+  O projeto tem a finalidade de atender a necessidade de interligação de dois andares, sendo
+  o piso 1 com 6 salas e o piso 2 com 10 salas, levando pontos de redes com acesso a dados e
+  voz, por meio de cabeamento horizontal para cada área de trabalho do edifício. Atualmente
+  o prédio  não conta com nenhum equipamento de TI facilitando a implantação do projeto
+  em questão. Basicamente o projeto utilizaria um armário de telecomunicação em cada piso interligados por um backbone e em cada armário de telecomunicação teremos um path panel e switch para dados e um path panel e switch para voz. 
+  
 \subsection{Benefícios}
-Explique quais seriam os benefícios provenientes após a execução deste projeto.
 
-\subsection{Organizações Envolvidas}
-Coloque o nome de todas as organizações envolvidas. Se for um projeto real, identifique quais as responsabilidades de cada uma das organizações. É comum que em um projeto de redes (cabeamento), temos várias organizações, sendo que cada uma delas com uma determinada responsabilidade.
+Com a implantação de um projeto de cabeamento estruturado seguindo normas como
+NBR-14565-2007 e TIA/EIA-568-B os principais benefícios são:
 
-Sugestão: crie uma tabela contento a relação delas.
+ • Probabilidade de ocorrer erros na camada física é menor por conta dos equipamentos
+e testes realizados no processo;
+
+ • A identificação de problemas posteriores na camada física podem ser localizados de
+forma mais fácil por conta da identificação dos pontos de redes;
+
+ • Uma rede estruturada esta preparada para um processo de ampliação.
 
 
-
-\section{Estado atual}
-Aprente o estado atual da rede. Caso não tenha rede, desconsiderar esta seção.
-
-Caso tenha rede, deixe claro:
-\begin{itemize}
-	\item os passivos de rede atuais:path panels, cabos, etc..;
-	\item as principais reclamações dos usuários. Qual o principal motivo da reestruturação? Efetue uma pesquisa junto aos colaboradores para determinar quais problemas a rede apresenta.
-	\item Observações. Analise a rede e verifique se há estruturas que não se enquadram nas normas ou que indicam suspeita de problemas.
-\end{itemize}
-
-\section{Requisitos}
-Crie uma enumeração dos requisitos do projeto.
-
-\section{Usuários e Aplicativos}
-Explique nesta seção os usuários atuais e o perfil de crescimento, se por exemplo, há estimativa na evolução da empresa no que tange a quantidade de usuários, pontos de redes, equipamentos.
- 
 
 \subsection{Usuários}
-Crie uma relação da quantidade, perfil de usuários de seu projeto.
 
-\subsection{Aplicativos}
-Crie uma relação dos aplicativos e seus níveis críticos de uso.
+A estrutura contará inicialmente com 16 tomadas de telecomunicação distribuídas nas
+salas do piso 1, onde as salas 1 e 4 terão 4 tomadas cada uma e as demais salas terão 2
+tomadas cada. O piso 2 contará com 23 tomadas de telecomunicação sendo que a sala
+2 possuirá 3 tomadas e a sala 3 possuirá 4 tomadas, as demais sala do piso terão duas
+tomadas de telecomunicação cada uma. A maioria das salas possuem 2 tomadas pois
+para o processo de certificação essa é a quantidade mínima de pontos para cada área de
+trabalho, porém a estrutura final contará com a possibilidade de ampliação da rede como
+um todo, visto que a empresa possui metas de crescimento e o projeto   de cabeamento
+estruturado visa atender essa expansão.
+
 
 
 \section{Estrutura predial existente}
 
-Explique aqui a planta física dos prédios
-Pode ser anexada, em escala ou não.
+A estrutura a ser atendida com o projeto de cabeamento estruturado é composta por 2
+pisos. O piso 1 possui 250m2, dividido em 6 salas e o piso 2,250m2,divido em 10 salas,
+sendo que ambos possuem estrutura para passagem do cabeamento, como eletrocalhas,
+canaletas, dutos e caixas de passagem. 
 
-Deve conter uma descrição geral, indicando a possível distância entre os pontos de rede e restrições de instalação.
 
 \section{Planta Lógica - Elementos estruturados}
 
-\subsection{Estado atual}
-Deve ter a planta atual, se for o caso
 
 \subsection{Topologia}
-Proposta futura, proposta após implantação.
-Deve conter o diagrama da rede. Atente-se a redundância  e ligações truncadas.
-Deve explicar todos termos e componentes utilizados nestas plantas. Por exemplo: entrance facility, work area, horizontal cabling, etc..
-
-Todos os elementos das figuras devem ser explicados. 
-Crie esboço da configuração dos racks e brackets. Explique cada um dos componentes. Você pode criar uma tabela contendo figuras dentro, ou criar uma tabela e incluí-la como imagem. Por exemplo, verifique a tabela \ref{tab1}.
-
-\input{tab1}
+No piso 1 foi inserido um armário de telecomunicações, que contem dois Path Panels
+de 24 portas, e esses estão diretamente conectados a dois Switches de 24 portas. Esses
+equipamentos estão divididos da seguinte maneira um Switch e um Path Panel disponível
+para dados e um Switch e um Path Panel disponível para voz e uma régua de energia, todos
+esses equipamentos estão localizados em um rack de 24U 670mm, disponibilizando um
+total de 32 pontos de comunicação, dividindo-se em dezesseis para dados e dezesseis para
+voz, interconectando as seis salas presentes nesse piso. No piso 2 foi inserido um armário
+de telecomunicações, que contem dois Path Panels de 48 portas, e esses estão diretamente
+conectados a dois Switches de 48 portas. Esses equipamentos estão divididos da seguinte
+maneira um Switch e um Path Panel disponível para dados e um Switch e um Path Panel
+disponível para voz e uma régua de energia, todos esses equipamentos estão localizados
+em um rack de 24U 670mm, disponibilizando um total de 46 pontos de comunicação,
+dividindo-se em vinte e três para dados e vinte e três para voz, interconectando as dez salas
+presentes nesse piso. A interligação dos pavimentos utiliza-se de um backbone composto
+de fibra optica 2 pares. A tabela 1 ilustra o layout dessa topologia acima descrita e a
+tabela 2 é a legenda dos equipamentos apresentados na tabela 1.
 
 \subsection{Encaminhamento}
-Eletrodutos, calhas, e qualquer material em que os cabos serão alojados/alocados.
-
+O cabeamento foi realizado em dois pisos de um edifício comercial, utilizando-se de
+eletrocalhas embutidas na parede, as tomadas de telecomunicações que disponibilizam
+dados e voz estão a 45 cm do chão conforme as normas de cabeamento estruturado.
 \subsection{Memorial descritivo}
 
-Relacione todos os equipamentos passivos que serão utilizados, tipo, fabricante, quantidade.
-
+Na tabela 3 temos os principais equipamentos que ser~ao utilizados para a elaboração do
+projeto com a estimativa de quantidade, abaixo da tabela segue as especificações dos equipamentos de maior relevância 
 \subsection{Identificação dos cabos}
-Explique como os cabos serão identificados em seu projeto. Coloque uma relação dos cabos instalados e identificados.
+A tabela 4 representa a identificação dos pontos das 6 salas presentes no piso 1. A tabela
+5 representa a identificação dos pontos das 10 salas presentes no piso 2, com a seguinte
+legenda:
+
+*  TO -  Numero da tomada de telecomunicação 
+
+*  A -   Dados
+
+*  B -   Voz
+
+*  SL -  Sala
+
+*  P -   Piso.
 
 \section{Implantação}
 Estabeleça um cronograma de implantação:
@@ -267,13 +283,11 @@ Revisões periódicas na rede, emissão de certificados para novos pontos.
 Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as estremidades da rede? 
 
 \section{Risco}
-Enumerar e explicar os riscos do projeto.
+Se tratando de um projeto estruturado e bem projetado, não corremos nenhum risco. 
 
 \section{Orçamento}
 Crie uma relação de orçamentos baseado na seções anteriores.
 
-\section{Recomendações}
-Observações e recomendações para o cliente.
 
 \section{Referências bibliográficas}
 Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
