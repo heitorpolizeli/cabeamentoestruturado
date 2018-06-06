@@ -214,6 +214,7 @@ canaletas, dutos e caixas de passagem.
 
 
 \subsection{Topologia}
+
 No piso 1 foi inserido um armário de telecomunicações, que contem dois Path Panels
 de 24 portas, e esses estão diretamente conectados a dois Switches de 24 portas. Esses
 equipamentos estão divididos da seguinte maneira um Switch e um Path Panel disponível
@@ -228,17 +229,128 @@ disponível para voz e uma régua de energia, todos esses equipamentos estão lo
 em um rack de 24U 670mm, disponibilizando um total de 46 pontos de comunicação,
 dividindo-se em vinte e três para dados e vinte e três para voz, interconectando as dez salas
 presentes nesse piso. A interligação dos pavimentos utiliza-se de um backbone composto
-de fibra optica 2 pares. A tabela 1 ilustra o layout dessa topologia acima descrita e a
-tabela 2 é a legenda dos equipamentos apresentados na tabela 1.
+de fibra optica 2 pares. A Figura 1 ilustra o layout dessa topologia acima descrita e a
+Figura 2 é a legenda dos equipamentos apresentados na Figura 1.
 
+
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{diagramalogicorede}
+	\caption{Diagrama Lógico de Rede }
+	\label{fig:diagramalogicorede}
+\end{figure}
 \subsection{Encaminhamento}
+
+	
 O cabeamento foi realizado em dois pisos de um edifício comercial, utilizando-se de
 eletrocalhas embutidas na parede, as tomadas de telecomunicações que disponibilizam
 dados e voz estão a 45 cm do chão conforme as normas de cabeamento estruturado.
 \subsection{Memorial descritivo}
 
-Na tabela 3 temos os principais equipamentos que ser~ao utilizados para a elaboração do
+Na Figura 3 temos os principais equipamentos que serão utilizados para a elaboração do
 projeto com a estimativa de quantidade, abaixo da tabela segue as especificações dos equipamentos de maior relevância 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{legendaequip}
+	\caption{ Legenda Dos Equipamentos }
+	\label{fig:legendaequip}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{quant_equip}
+	\caption{Quantidade Dos Equipamentos }
+	\label{fig:quantequip}
+\end{figure}
+
+Na Figura 4 apresenta o Armário de telecomunicação utilizado no piso 1 e 2, com as seguintes especificações : 
+
+* Material: A¸co
+
+* Espessura: 2,00 mm
+
+* Espessura Portas e Laterais: 1,20 mm
+
+* Altura: 2100 mm
+
+* Largura: 600 mm
+
+* Profundidade: 800mm
+
+* Peso: 112Kg
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{racktelecom}
+	\caption{ Armário de Telecomunicação}
+	\label{fig:racktelecom}
+\end{figure}
+
+
+Figura 5 apresenta Switch de 48 portas utilizado no piso 2 para atender as 10 salas
+presentes no andar. O Cisco Catalyst 3550 12G, empilhavel, fornecem alta disponibilidade, segurança e qualidade de serviço (QoS) para melhorar o funcionamento da rede. 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{switch}
+	\caption{Switch Cisco }
+	\label{fig:switch}
+\end{figure}
+
+
+Figura 6 apresenta Switch de 24 portas utilizado no piso 1 para atender as 6 salas
+presentes no andar. Switch com Configuração Fixa 24 portas Gigabit 10/100/1000
+que suportam conexões de alto desempenho. Priorização IEEE 802.1p que oferece compatibilidade com as redes que suportam aplicações de tempo real. Pode ser montado em armários ou empilhado para otimizar o espaço, sua altura de 1U padrão simplifica o planejamento do espaço.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{switchm}
+	\caption{Switch Gigabit /10/100/1000}
+	\label{fig:switchm}
+\end{figure}
+
+Figura 7 apresenta Path Panel de 24 e 48 portas utilizados nos armários de telecomunicação que interliga o cabeamento horizontal aos Switches.
+
+• Excede os requisitos estabelecidos nas normas para CAT.6 / Classe E
+
+• Performance garantida para até 6 conexões em canais de até 100 metros
+
+• 24 ou 48 posições RJ-45
+
+• Painel frontal em plastico com porta etiquetas para identificação. 
+
+• Possui borda de reforço para evitar empenamento
+
+• Fornecido com parafusos e arruelas para fixar 
+
+• Fornecido com ícones de identificação o e velcros para organiza¸c˜ao
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{pathcpanel}
+	\caption{Patch Panel }
+	\label{fig:pathcpanel}
+\end{figure}
+
+Figura 8 apresenta a régua utilizado nos armários de telecomunicação com a seguinte
+característica 
+
+• Régua sem disjuntor com 8 tomadas para Armários de telecomunicação e cabo com 1,5 mts
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{reguaene}
+	\caption{Régua Alimentação}
+	\label{fig:reguaene}
+\end{figure}
+
 \subsection{Identificação dos cabos}
 A tabela 4 representa a identificação dos pontos das 6 salas presentes no piso 1. A tabela
 5 representa a identificação dos pontos das 10 salas presentes no piso 2, com a seguinte
@@ -337,35 +449,6 @@ Na tab \ref{tab2} temos a relação de ....
 
 Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
 
-\subsection{Figuras}
-
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig1} apresenta.....
-
-Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{fig1}
-\caption{Exemplo de figura com escala horizontal}
-\label{fig1}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[]{fig2}
-	\caption{Exemplo de figura sem escala}
-	\label{fig2}
-\end{figure}
-
-Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
-
-\begin{figure}
-	\centering
-	\includegraphics[height=\textwidth,angle=-90]{fig3}
-	\caption{Exemplo de figura rotacionada}
-	\label{fig3}
-\end{figure}
 
 
 %% ***********************************************************************
